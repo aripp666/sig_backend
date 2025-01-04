@@ -17,9 +17,10 @@ use App\Http\Controllers\ApotekController;
 
 Route::get('/apoteks', [ApotekController::class, 'index']);
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::get('/user', function (Request $request) {
+    return response()->json(['message' => 'Public access']);
 });
+
 
 Route::get('/apotek', function () {
     return response()->json([

@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['https://sig-apotek-jm48.vercel.app/'],
+    'allowed_origins' => ['*'],
 
     'allowed_origins_patterns' => [],
 
