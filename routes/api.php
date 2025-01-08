@@ -15,7 +15,7 @@ use App\Http\Controllers\ApotekController;
 */
 
 
-Route::get('/apoteks', [ApotekController::class, 'index']);
+Route::get('/Apotek', [ApotekController::class, 'index']);
 
 Route::get('/user', function (Request $request) {
     return response()->json(['message' => 'Public access']);
